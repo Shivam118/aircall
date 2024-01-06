@@ -1,0 +1,98 @@
+.content {
+  width: 100%;
+  height: 100%;
+}
+.content .content-header {
+  width: 100%;
+  height: 40px;
+}
+.content .content-header ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0 10px;
+}
+.content .content-header ul li {
+  list-style: none;
+  padding: 0 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #a5a5a5;
+  cursor: pointer;
+}
+.content .content-header ul li.active {
+  color: rgb(14, 58, 180);
+}
+.content .calls-list {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+.content .calls-list .callCard {
+  box-sizing: border-box;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 0 0 10px;
+  position: relative;
+}
+.content .calls-list .callCard .callCardDetails {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.content .calls-list .callCard:hover {
+  box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.content .calls-list .callCard .callCardLogo {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 50%;
+  background: #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-right: 10px;
+}
+.content .calls-list .callCard .callCardDetails .callNumberCard.missed {
+  color: red;
+}
+.content .calls-list .callCard .callCardDetails .callNumberCard h5 {
+  padding-bottom: 5px;
+}
+.content .calls-list .callCard .callCardLogo .missed {
+  font-size: 10px;
+  color: red;
+  position: absolute;
+  bottom: -10px;
+  left: 5px;
+}
+.content .calls-list .callCard .archiveIcon {
+  font-size: 0px;
+  width: 0%;
+  transition: 0s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content .calls-list .callCard:hover .archiveIcon {
+  transition: 0.5s;
+  box-sizing: border-box;
+  width: 40px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
